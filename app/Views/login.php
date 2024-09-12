@@ -1,3 +1,4 @@
+
 <header class="text-bg-primary py-4 ">
         <div class="container">
         <h1 class="text-center"> Login</h1>
@@ -8,14 +9,14 @@
       <section>
        
         <div class="container card mt-5 py-3">
-            <form>
+            <form method="post" action="<?php echo base_url();?>login">
                 <div class="mb-3">
                   <label for="InputUsername" class="form-label">Username</label>
-                  <input type="Username" class="form-control" id="InputUsername" placeholder="Please enter your username">
+                  <input type="Username" class="form-control" name="username" placeholder="Please enter your username">
                 </div>
                   <div class="mb-3">
                     <label for="InputPassword" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="InputPassword" placeholder="Please enter your passwword">
+                    <input type="password" class="form-control" name="password" placeholder="Please enter your passwword">
                   </div>
                 <button type="login" class="btn btn-primary">Login</button>
               </form>

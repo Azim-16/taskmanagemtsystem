@@ -2,7 +2,7 @@
         <h1 class="text-center">Welcome To Task Management System</h1>
         <div class="text-center">
             <p>Manage your task efficiently and effectively</p>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <a href="newtask" class="btn btn-primary">Add New Task</a>
         </div>
         
     </header>
@@ -21,16 +21,18 @@
           </tr>
         </thead>
         <tbody>
+          <?php foreach ($tasks as $task): ?>
           <tr>
-            <th scope="row">1</th>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td><?= $task["title"]?></td>
+            <td><?= $task["description"]?></td>
+            <td><?= $task["due_date"]?></td>
+            <td><?= $task["status"]?></td>
             <td>
-                <button type="button" class="btn btn-warning">Update</button>
-                <button type="button text-light" class="btn btn-danger">Delete</button>
+                <a type="button" class="btn btn-warning" href="/update/<?= $task["id"]?>">Update</a>
+                <button type="button text-light" class="btn btn-danger" href="/delete/<?= $task["id"]?>">Delete</a>
             </td>
           </tr>
+          <?php endforeach; ?>
         </tbody>
       </table>
     </section>

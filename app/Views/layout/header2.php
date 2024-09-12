@@ -2,7 +2,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
-    <link href="asset/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>asset/css/bootstrap.css" rel="stylesheet">
 
 </head>
 <body>
@@ -18,10 +18,10 @@
                 <a class="nav-link active" aria-current="page" href="<?php echo base_url(); ?>dashboard">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="<?php echo base_url(); ?>newtask">Add Task</a>
+                <a class="nav-link" aria-current="page" href="<?php echo base_url(); ?>newtask">Dashboard</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="main.html">Logout</a>
+                <a class="nav-link" href="<?php echo base_url(); ?>logout">Logout</a>
               </li>
             </ul>
           </div>

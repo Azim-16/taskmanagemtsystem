@@ -2,7 +2,7 @@
         <h1 class="text-center">Welcome To Task Management Systems</h1>
         <div class="text-center">
             <p class="text-light">Your simple and effective way to manage efficiently</p>
-            <a href="register.html" class="btn btn-light ">Submit</a>
+            <a href="register" class="btn btn-light ">Submit</a>
         </div>
         
     </header>
